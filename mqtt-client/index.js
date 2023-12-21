@@ -28,6 +28,7 @@ client.on('connect', () => {
     });
 
     client.on('message', (topic, payload) => {
+        // TODO exercise 5
         console.log('Received Message:', topic, payload.toString())
     })
 })

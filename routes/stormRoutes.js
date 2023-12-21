@@ -13,7 +13,7 @@ stormRouter.route(":/name").get(async (req, res) => {
       { city: { $exists: false } }
     ],
   }).sort({ city: -1, deleteTime: 1 });
-
+  
   res.json(storms);
 });
 
